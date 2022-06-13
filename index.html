@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>DrivenEats</title>
   </head>
   <body>
     <div class="titulo">
@@ -12,39 +21,114 @@
       <p>Sua comida em 6 minutos</p>
     </div>
     <div class="prato">
-      <p>Primeiro, seu prato</p>
-      <div>
-        <img src="" alt="" />
-        <p class="t1">Frango Yin Yang</p>
-        <p class="t2">Um pouco de batata, um pouco de salada</p>
-        <p class="t3">R$ 14,90</p>
+      <p class="t1">Primeiro, seu prato</p>
+      <div class="carrossel">
+        <div class="card" onclick="queroP(this);">
+          <img class="imgcard" src="imgs/frango_yin_yang 1.png" alt="" />
+          <p class="t2">Frango Yin Yang P</p>
+          <p class="t3">Um pouco de batata, um pouco de salada</p>
+          <p class="t4">R$ 14,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card" onclick="queroP(this);">
+          <img class="imgcard" src="imgs/frango_yin_yang 1.png" alt="" />
+          <p class="t2">Frango Yin Yang M</p>
+          <p class="t3">Um pouco de batata, um pouco de salada</p>
+          <p class="t4">R$ 19,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card" onclick="queroP(this);">
+          <img class="imgcard" src="imgs/frango_yin_yang 1.png" alt="" />
+          <p class="t2">Frango Yin Yang G</p>
+          <p class="t3">Um pouco de batata, um pouco de salada</p>
+          <p class="t4">R$ 24,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
       </div>
     </div>
     <div class="bebida">
-      <p>Agora, sua bebida</p>
-      <div>
-        <img src="" alt="" />
-        <p class="t1">Coquinha gelada</p>
-        <p class="t2">Lata 350ml</p>
-        <p class="t3">R$ 4,90</p>
+      <p class="t1">Agora, sua bebida</p>
+      <div class="carrossel">
+        <div class="card" onclick="queroB(this);">
+          <img
+            class="imgcard"
+            src="imgs/coquinha_gelada 1.png
+          "
+            alt=""
+          />
+          <p class="t2">Coquinha gelada 350ml</p>
+          <p class="t3">Lata 350ml</p>
+          <p class="t4">R$ 4,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card" onclick="queroB(this);">
+          <img
+            class="imgcard"
+            src="imgs/coquinha_gelada 1.png
+          "
+            alt=""
+          />
+          <p class="t2">Coquinha gelada 600ml</p>
+          <p class="t3">Garafa 600ml</p>
+          <p class="t4">R$ 7,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card" onclick="queroB(this);">
+          <img
+            class="imgcard"
+            src="imgs/coquinha_gelada 1.png
+          "
+            alt=""
+          />
+          <p class="t2">Coquinha gelada 2L</p>
+          <p class="t3">Garafa 2l</p>
+          <p class="t4">R$ 10,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
       </div>
     </div>
     <div class="sobremesa">
-      <p>Por fim, sua sobremesa</p>
-      <div>
-        <img src="" alt="" />
-        <p class="t1">Pudim</p>
-        <p class="t2">Apenas pudim</p>
-        <p class="t3">R$ 7,90</p>
+      <p class="t1">Por fim, sua sobremesa</p>
+      <div class="carrossel">
+        <div class="card" onclick="queroS(this);">
+          <img class="imgcard" src="imgs/pudim 1.png" alt="" />
+          <p class="t2">Pudim P</p>
+          <p class="t3">Apenas pudim</p>
+          <p class="t4">R$ 7,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card" onclick="queroS(this);">
+          <img class="imgcard" src="imgs/pudim 1.png" alt="" />
+          <p class="t2">Pudim M</p>
+          <p class="t3">Apenas pudim</p>
+          <p class="t4">R$ 10,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card" onclick="queroS(this);">
+          <img class="imgcard" src="imgs/pudim 1.png" alt="" />
+          <p class="t2">Pudim G</p>
+          <p class="t3">Apenas pudim</p>
+          <p class="t4">R$ 13,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
       </div>
     </div>
     <div class="finalizar">
       <div class="botao1">
         <p>Selecione os 3 itens para fechar o pedido</p>
       </div>
-      <div class="botao2">
+      <div class="botao2 hidden" onclick="mensagem(this)">
         <p>Fechar pedido</p>
       </div>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
